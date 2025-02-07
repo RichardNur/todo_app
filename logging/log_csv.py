@@ -5,8 +5,8 @@ import os
 import time
 
 def log(message):
-    file_exists = os.path.isfile('logs.csv')
-    with open('logs.csv', mode='a') as file:
+    file_exists = os.path.isfile('../logs/logs.csv')
+    with open('../logs/logs.csv', mode='a') as file:
         fieldnames = ['Time', 'Message']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
 

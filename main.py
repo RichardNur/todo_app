@@ -1,7 +1,6 @@
-import os
 from flask import Flask, render_template, request, redirect, url_for
-from log_csv import log
-from db_sqlite import get_db, Todo
+from todo_app.logging.log_csv import log
+from todo_app.db_managers.db_sqlite import get_db, Todo
 
 app = Flask(__name__, template_folder="")
 db = get_db(app)
